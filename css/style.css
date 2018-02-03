@@ -1,0 +1,43 @@
+body {
+    background-color: brown;
+}
+
+.menu-cards, .invoice-card {
+    /* padding-top: 100px; */
+    padding-left: 100px;
+    padding-right: 100px;
+    /* text-align: center; */
+}
+
+.card-block {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.card {
+    margin: 15px;
+    /* border-radius: 5%; */
+}
+
+.card-text {
+    font-style: italic; 
+}
+
+.card-header {
+    font-weight: 500;
+    font-size: 2em;
+}
+
+ul {
+   list-style: none; 
+}
+
+/* .order-buttons */
+
+button {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 25%;
+}

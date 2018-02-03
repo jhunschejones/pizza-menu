@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <!-- My CSS & jQuery-->
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <title>Pizza Menu</title>
+    </head>
+<body>
+    <!-- JUMBOTRON -->
+    <div class="jumbotron">
+        <h1 class="text-center display-3">Not Your Mother's Pizza Joint</h1>
+        <!-- <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p> -->
+        <!-- <hr class="my-4"> -->
+        <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+        <!-- <p class="lead"> -->
+        <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+        </p>
+    </div>
+
+    <!-- Menu Options -->
+    <div class="menu-cards">
+        <div class="card-group">
+            <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">Size</h4>
+                    <p class="card-text">You're going to eat all that yourself?</p>
+                    <form>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input size" name="optionsRadios" id="personal" value="personal" checked>
+                                Personal
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input size" name="optionsRadios" id="medium" value="medium">
+                                Medium
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input size" name="optionsRadios" id="lage" value="large">
+                                Large
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input size" name="optionsRadios" id="xlarge" value="xlarge">
+                                Extra Large
+                            </label>
+                        </div>
+                    </form>
+                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">Meat</h4>
+                    <p class="card-text">Two words: Meat. Sweats.</p>
+                    <form>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="pepperoni">
+                                Pepperoni
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="sausage">
+                                Sausage
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="canadian">
+                                Canadian Bacon
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="beef">
+                                Ground Beef
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="anchovy">
+                                Anchovy
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="chicken">
+                                Chicken
+                            </label>
+                        </div>
+                    </form>                   
+                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                </div>
+            </div>
+                <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-block">
+                    <h4 class="card-title">Cheese</h4>
+                    <p class="card-text">More is more</p>
+                    <form>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optionsRadios" id="normal_cheese" value="normal_cheese" checked>
+                                Regular
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optionsRadios" id="no_cheese" value="no_cheese">
+                                No Cheese
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optionsRadios" id="x_cheese" value="x_cheese">
+                                Extra Cheese
+                            </label>
+                        </div>
+                    </form>
+                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="card-group">
+            <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">Crust</h4>
+                    <p class="card-text">The bread of the people</p>
+                    <form>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optionsRadios" id="plain" value="plain" checked>
+                                Plain Crust
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optionsRadios" id="garlic" value="garlic">
+                                Garlic Butter Crust
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optionsRadios" id="stuffed" value="stuffed">
+                                Cheese Stuffed Crust
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optionsRadios" id="spicy" value="spicy">
+                                Spicy Crust
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optionsRadios" id="special" value="special">
+                                House Special Crust
+                            </label>
+                        </div>
+                    </form>
+                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">Sauce</h4>
+                    <p class="card-text">;)</p>
+                    <form>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optionsRadios" id="marinara" value="marinara" checked>
+                                Marinara sauce
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optionsRadios" id="white" value="white">
+                                White sauce
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optionsRadios" id="barbeque" value="barbeque">
+                                Barbeque sauce
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optionsRadios" id="no_sause" value="no_sause">
+                                No sause
+                            </label>
+                        </div>
+                    </form>
+                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                </div>
+            </div>
+                <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-block">
+                    <h4 class="card-title">Veggies</h4>
+                    <p class="card-text">Pizza has all the food groups, right?</p>
+                    <form>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="tomatoes">
+                                Tomatoes
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="onions">
+                                Onions
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="olives">
+                                Olives
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="peppers">
+                                Green Peppers
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="mushrooms">
+                                Mushrooms
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="pineapple">
+                                Pineapple
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="spinach">
+                                Spinach
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="jalapeno">
+                                Jalapeno
+                            </label>
+                        </div>
+                    </form>    
+                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Buttons -->
+    <div class="container">
+        <div class="order_buttons text-center">
+            <button type="button" id="order" class="btn btn btn-success btn-lg">Order</button>
+            <script>
+            $( "#order" ).click(function() {
+                alert( "Handler for order called." );
+            });
+            </script>
+            <button type="button" id="clear" class="btn btn-warning btn-lg">Clear</button>
+            <script>
+            $( "#clear" ).click(function() {
+                alert( "Handler for clear called." );
+            });
+            </script>
+        </div>
+    </div>
+
+    <!-- Invoice -->
+    <div class="invoice-card">
+        <div class="card">
+            <div class="card-header">
+            Your Order:
+            </div>
+            <div class="card-block">
+                <ul>
+                    <li class="size"></li>
+                    <li class="crust"></li>
+                    <li class="cheese"></li>
+                    <li class="meat"></li>
+                    <li class="sause"></li>
+                    <li class="veggies"></li>
+                    <li class="total"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="./js/my_script.js"></script>
+    </body>
+</html>
