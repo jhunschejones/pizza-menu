@@ -41,3 +41,17 @@ button {
     margin-bottom: 10px;
     min-width: 25%;
 }
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.jumbotron {
+    background-image: url(../images/large1.jpg);
+}
+
+.jumbo_head {
+    text-shadow: 2px 2px 8px #4d4d4d;
+}
+

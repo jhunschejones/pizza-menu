@@ -11,51 +11,53 @@
         <link rel="stylesheet" href="./css/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-        <title>Pizza Menu</title>
+        <title>Not Your Mother's Pizza Joint</title>
     </head>
 <body>
     <!-- JUMBOTRON -->
-    <div class="jumbotron">
-        <h1 class="text-center display-3">Not Your Mother's Pizza Joint</h1>
-        <!-- <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p> -->
-        <!-- <hr class="my-4"> -->
-        <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
-        <!-- <p class="lead"> -->
-        <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
-        </p>
+    <div class="page_head">
+        <div class="jumbotron">
+            <h1 class="text-center display-3 text-white jumbo_head">"Not Your Mother's Pizza Joint"</h1>
+            <!-- <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p> -->
+            <!-- <hr class="my-4"> -->
+            <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+            <!-- <p class="lead"> -->
+            <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+            </p>
+        </div>
     </div>
 
     <!-- Menu Options -->
     <div class="menu-cards">
         <div class="card-group">
             <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
+                <img class="card-img-top img-responsive" src="./images/size.jpg" alt="Card image cap">
                 <div class="card-block">
                     <h4 class="card-title">Size</h4>
                     <p class="card-text">You're going to eat all that yourself?</p>
-                    <form>
+                    <form id="size_form">
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input type="radio" class="form-check-input size" name="optionsRadios" id="personal" value="personal" checked>
-                                Personal
+                                <input type="radio" class="form-check-input pizza_size" name="optionsRadios" id="personal" value="Personal" checked>
+                                Personal ($6.00)
                             </label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input type="radio" class="form-check-input size" name="optionsRadios" id="medium" value="medium">
-                                Medium
+                                <input type="radio" class="form-check-input pizza_size" name="optionsRadios" id="medium" value="Medium">
+                                Medium ($10.00)
                             </label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input type="radio" class="form-check-input size" name="optionsRadios" id="lage" value="large">
-                                Large
+                                <input type="radio" class="form-check-input pizza_size" name="optionsRadios" id="lage" value="Large">
+                                Large ($14.00)
                             </label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input type="radio" class="form-check-input size" name="optionsRadios" id="xlarge" value="xlarge">
-                                Extra Large
+                                <input type="radio" class="form-check-input pizza_size" name="optionsRadios" id="xlarge" value="Extra Large">
+                                Extra Large ($16.00)
                             </label>
                         </div>
                     </form>
@@ -63,150 +65,150 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
+                <img class="card-img-top" src="./images/meat.jpg" alt="Card image cap">
                 <div class="card-block">
                     <h4 class="card-title">Meat</h4>
                     <p class="card-text">Two words: Meat. Sweats.</p>
-                    <form>
+                    <form id="meat_form">
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="pepperoni">
+                                <input class="form-check-input meat_type" type="checkbox" value="Pepperoni">
                                 Pepperoni
                             </label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="sausage">
+                                <input class="form-check-input meat_type" type="checkbox" value="Sausage">
                                 Sausage
                             </label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="canadian">
+                                <input class="form-check-input meat_type" type="checkbox" value="Canadian Bacon">
                                 Canadian Bacon
                             </label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="beef">
+                                <input class="form-check-input meat_type" type="checkbox" value="Ground Beef">
                                 Ground Beef
                             </label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="anchovy">
+                                <input class="form-check-input meat_type" type="checkbox" value="Anchovy">
                                 Anchovy
                             </label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="chicken">
+                                <input class="form-check-input meat_type" type="checkbox" value="Chicken">
                                 Chicken
                             </label>
                         </div>
                     </form>                   
-                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                    <p class="card-text"><small class="text-muted">First meat is free, +$1.00 for each additional meat</small></p>
                 </div>
             </div>
                 <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
+                <img class="card-img-top" src="./images/cheese.jpg" alt="Card image cap">
                     <div class="card-block">
                     <h4 class="card-title">Cheese</h4>
-                    <p class="card-text">More is more</p>
-                    <form>
+                    <p class="card-text">More is more.*</p>
+                    <form id="cheese_form">
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="optionsRadios" id="normal_cheese" value="normal_cheese" checked>
+                                <input type="radio" class="form-check-input cheese_choice" name="optionsRadios" value="Normal Cheese" checked>
                                 Regular
                             </label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="optionsRadios" id="no_cheese" value="no_cheese">
+                                <input type="radio" class="form-check-input cheese_choice" name="optionsRadios" value="No Cheese">
                                 No Cheese
                             </label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="optionsRadios" id="x_cheese" value="x_cheese">
-                                Extra Cheese
+                                <input type="radio" class="form-check-input cheese_choice" name="optionsRadios" value="Extra Cheese">
+                                Extra Cheese (+$3.00)
                             </label>
                         </div>
                     </form>
-                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                    <p class="card-text"><small class="text-muted">*Disclaimer: lactaid not included, ask your friend before ordering cheese</small></p>
                 </div>
             </div>
         </div>
 
         <div class="card-group">
             <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
+                <img class="card-img-top" src="./images/crust.jpg" alt="Card image cap">
                 <div class="card-block">
                     <h4 class="card-title">Crust</h4>
-                    <p class="card-text">The bread of the people</p>
-                    <form>
+                    <p class="card-text">The bread of the people.*</p>
+                    <form id="crust_form">
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="optionsRadios" id="plain" value="plain" checked>
+                                <input type="radio" class="form-check-input crust_choice" name="optionsRadios" value="Plain Crust" checked>
                                 Plain Crust
                             </label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="optionsRadios" id="garlic" value="garlic">
+                                <input type="radio" class="form-check-input crust_choice" name="optionsRadios" value="Garlic Butter Crust">
                                 Garlic Butter Crust
                             </label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="optionsRadios" id="stuffed" value="stuffed">
-                                Cheese Stuffed Crust
+                                <input type="radio" class="form-check-input crust_choice" name="optionsRadios" value="Cheese Stuffed Crust">
+                                Cheese Stuffed Crust (+$3.00)
                             </label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="optionsRadios" id="spicy" value="spicy">
+                                <input type="radio" class="form-check-input crust_choice" name="optionsRadios" value="Spicy Crust">
                                 Spicy Crust
                             </label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="optionsRadios" id="special" value="special">
+                                <input type="radio" class="form-check-input crust_choice" name="optionsRadios" value="House Special Crust">
                                 House Special Crust
                             </label>
                         </div>
                     </form>
-                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                    <p class="card-text"><small class="text-muted">*Yes this is Portland, no we do not offer gluten free. You can eat some napkins if you really want... paper doesn't have gluten right?</small></p>
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
+                <img class="card-img-top" src="./images/sauce.jpg" alt="Card image cap">
                 <div class="card-block">
                     <h4 class="card-title">Sauce</h4>
                     <p class="card-text">;)</p>
-                    <form>
+                    <form id="sause_form">
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="optionsRadios" id="marinara" value="marinara" checked>
-                                Marinara sauce
+                                <input type="radio" class="form-check-input sauce_choice" name="optionsRadios" value="Marinara Sauce" checked>
+                                Marinara Sauce
                             </label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="optionsRadios" id="white" value="white">
-                                White sauce
+                                <input type="radio" class="form-check-input sauce_choice" name="optionsRadios" value="White Sauce">
+                                White Sauce
                             </label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="optionsRadios" id="barbeque" value="barbeque">
-                                Barbeque sauce
+                                <input type="radio" class="form-check-input sauce_choice" name="optionsRadios" value="Barbeque Sauce">
+                                Barbeque Sauce
                             </label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="optionsRadios" id="no_sause" value="no_sause">
-                                No sause
+                                <input type="radio" class="form-check-input sauce_choice" name="optionsRadios" value="No Sauce">
+                                No Sauce
                             </label>
                         </div>
                     </form>
@@ -214,61 +216,61 @@
                 </div>
             </div>
                 <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
+                <img class="card-img-top" src="./images/veggies.jpg" alt="Card image cap">
                     <div class="card-block">
                     <h4 class="card-title">Veggies</h4>
                     <p class="card-text">Pizza has all the food groups, right?</p>
-                    <form>
+                    <form id="veggies_form">
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="tomatoes">
+                                <input class="form-check-input veggies_type" type="checkbox" value="Tomatoes">
                                 Tomatoes
                             </label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="onions">
+                                <input class="form-check-input veggies_type" type="checkbox" value="Onions">
                                 Onions
                             </label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="olives">
+                                <input class="form-check-input veggies_type" type="checkbox" value="Olives">
                                 Olives
                             </label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="peppers">
+                                <input class="form-check-input veggies_type" type="checkbox" value="Green Peppers">
                                 Green Peppers
                             </label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="mushrooms">
+                                <input class="form-check-input veggies_type" type="checkbox" value="Mushrooms">
                                 Mushrooms
                             </label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="pineapple">
+                                <input class="form-check-input veggies_type" type="checkbox" value="Pineapple">
                                 Pineapple
                             </label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="spinach">
+                                <input class="form-check-input veggies_type" type="checkbox" value="Spinach">
                                 Spinach
                             </label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="jalapeno">
+                                <input class="form-check-input veggies_type" type="checkbox" value="Jalapeno">
                                 Jalapeno
                             </label>
                         </div>
                     </form>    
-                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                    <p class="card-text"><small class="text-muted">First veggie topping is free, then +$1.00 for each additional veggie choice</small></p>
                 </div>
             </div>
         </div>
@@ -277,18 +279,18 @@
     <!-- Order Buttons -->
     <div class="container">
         <div class="order_buttons text-center">
-            <button type="button" id="order" class="btn btn btn-success btn-lg">Order</button>
-            <script>
+            <button type="button" id="order" class="btn btn btn-success btn-lg" onclick="totalSize()">Order</button>
+            <!-- <script>
             $( "#order" ).click(function() {
                 alert( "Handler for order called." );
             });
-            </script>
-            <button type="button" id="clear" class="btn btn-warning btn-lg">Clear</button>
-            <script>
+            </script> -->
+            <button type="button" id="clear" class="btn btn-warning btn-lg" onclick="clearForm()">Clear</button>
+            <!-- <script>
             $( "#clear" ).click(function() {
                 alert( "Handler for clear called." );
             });
-            </script>
+            </script> -->
         </div>
     </div>
 
@@ -308,6 +310,9 @@
                     <li class="veggies"></li>
                     <li class="total"></li>
                 </ul>
+                <p id="your_order">
+                    Place your order today!
+                </p>
             </div>
         </div>
     </div>
@@ -319,6 +324,6 @@
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-        <script src="./js/my_script.js"></script>
+        <script src="./js/myscript.js"></script>
     </body>
 </html>
